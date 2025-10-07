@@ -24,7 +24,7 @@ body {
   position: relative;
 }
 
-/* Floating glowing circles */
+
 body::before, body::after {
   content: "";
   position: absolute;
