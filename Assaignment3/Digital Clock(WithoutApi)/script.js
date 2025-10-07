@@ -22,7 +22,7 @@ function updateClock(){
   const date = now.getDate();
   dateBox.textContent = `${day}, ${month} ${date}`;
 
-  // Change background according to AM/PM
+  
   if(ampm === 'AM'){
     document.body.style.background = 'linear-gradient(180deg,#a1c4fd,#c2e9fb 50%,#fff8c9)';
     clockBox.style.background = 'rgba(255,255,255,0.2)';
