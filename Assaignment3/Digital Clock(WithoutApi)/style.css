@@ -25,7 +25,7 @@ html,body{
 .zone.left{left:0;top:0;bottom:0;width:20%;}
 .zone.right{right:0;top:0;bottom:0;width:20%;}
 
-/* Clock Box */
+
 .clock-box{
   position:absolute;
   top:40%;
