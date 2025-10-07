@@ -1,0 +1,49 @@
+:root{
+  --sky1: #ff9a9e;
+  --sky2: #fecf8b;
+  --sky3: #ffd89b;
+  --sun: #ff6b6b;
+  --ground: #4b2e83;
+}
+
+html,body{
+  height:100%;
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg,var(--sky1), var(--sky2) 50%, var(--sky3));
+  transition: background 600ms ease;
+  overflow:hidden;
+}
+
+.scene{position:relative;width:100%;height:100vh;}
+.sun{position:absolute;left:50%;transform:translateX(-50%);bottom:20%;width:140px;height:140px;border-radius:50%;background: radial-gradient(circle at 30% 30%, #fff3, var(--sun));box-shadow: 0 20px 60px rgba(255,107,107,0.25);transition: bottom 600ms ease, width 400ms ease, height 400ms ease, filter 400ms ease;}
+.ground{position:absolute;left:0;right:0;bottom:0;height:18%;background: linear-gradient(180deg, rgba(0,0,0,0) 0%, var(--ground) 100%);clip-path: ellipse(70% 60% at 50% 40%);opacity:0.85;transition: height 600ms ease;}
+
+.zone{position:absolute;}
+.zone.top{top:0;left:10%;right:10%;height:30%;}
+.zone.bottom{bottom:0;left:10%;right:10%;height:30%;}
+.zone.left{left:0;top:0;bottom:0;width:20%;}
+.zone.right{right:0;top:0;bottom:0;width:20%;}
+
+/* Clock Box */
+.clock-box{
+  position:absolute;
+  top:40%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  background:rgba(255,255,255,0.15);
+  backdrop-filter:blur(10px);
+  padding:20px 30px;
+  border-radius:20px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.2);
+  text-align:center;
+  transition: background 0.6s ease;
+}
+.clock{color:white;font-size:64px;font-weight:bold;text-shadow:0 0 10px rgba(0,0,0,0.3);}
+.date{color:white;font-size:20px;margin-top:6px;text-shadow:0 0 6px rgba(0,0,0,0.2);}
+
+.ui{position:absolute;left:16px;top:16px;background:rgba(255,255,255,0.12);backdrop-filter: blur(6px);color:white;padding:10px 12px;border-radius:10px;font-size:14px;max-width:280px;box-shadow: 0 6px 18px rgba(0,0,0,0.18);}
+.badge{font-weight:700;letter-spacing:0.6px}
+
+.sun.raise{ bottom:42%; width:170px; height:170px; filter: blur(2px); }
+.sun.shrink{ width:110px; height:110px; bottom:8%; filter: blur(0); }

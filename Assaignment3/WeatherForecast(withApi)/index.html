@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WeatherNow App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>🌤 WeatherNow</h1>
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Enter city (e.g., London)" />
+      <button id="searchBtn">Go</button>
+    </div>
+    <div id="error" class="error"></div>
+    <div id="weather" class="weather">
+      <h2 id="cityName"></h2>
+      <img id="icon" alt="Weather Icon" />
+      <div class="temp" id="temp"></div>
+      <div class="desc" id="desc"></div>
+      <div class="details">
+        <div>💨 Wind: <span id="wind"></span> m/s</div>
+        <div>💧 Humidity: <span id="humidity"></span>%</div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

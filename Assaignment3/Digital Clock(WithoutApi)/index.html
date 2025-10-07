@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reactive Sunset Clock</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scene" id="scene">
+    <div class="sun" id="sun"></div>
+    <div class="ground" id="ground"></div>
+
+    <!-- Digital Clock Box -->
+    <div class="clock-box" id="clockBox">
+      <div class="clock" id="clock"></div>
+      <div class="date" id="date"></div>
+    </div>
+
+    <!-- Invisible interactive zones -->
+    <div class="zone top" data-side="top"></div>
+    <div class="zone bottom" data-side="bottom"></div>
+    <div class="zone left" data-side="left"></div>
+    <div class="zone right" data-side="right"></div>
+
+    <div class="ui" id="ui">
+      <div class="badge">Reactive Sunset Clock</div>
+      <div style="font-size:13px;margin-top:6px;opacity:0.95">Touch / click any side of the screen:<br>
+        top → cool sky<br>
+        left → sunrise<br>
+        right → sunset<br>
+        bottom → warm ground pulse
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
